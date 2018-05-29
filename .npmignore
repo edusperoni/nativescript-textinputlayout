@@ -5,6 +5,7 @@ demo/
 *.log
 *.ts
 !textInputLayout.d.ts
+!angular/*.ts
 tsconfig.json
 CONTRIBUTING.md
 README.md
