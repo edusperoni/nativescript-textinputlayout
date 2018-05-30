@@ -5,7 +5,7 @@ import { TextValueAccessor } from "nativescript-angular/forms/value-accessors/te
  *
  *  ### Example
  *  ```
- *  <MaskedTextField [(ngModel)]="model.test">
+ *  <TextInputLayout [(ngModel)]="model.test">
  *  ```
  */
 export declare class TextInputLayoutValueAccessor extends TextValueAccessor {

@@ -23,7 +23,7 @@ var MASKED_TEXT_VALUE_ACCESSOR = {
  *
  *  ### Example
  *  ```
- *  <MaskedTextField [(ngModel)]="model.test">
+ *  <TextInputLayout [(ngModel)]="model.test">
  *  ```
  */
 var TextInputLayoutValueAccessor = (function (_super) {
