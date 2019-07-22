@@ -1,9 +1,4 @@
 android {
-    productFlavors {
-        "nativescripttextinputlayout" {
-            dimension "nativescripttextinputlayout"
-        }
-    }
 }
 
 dependencies {

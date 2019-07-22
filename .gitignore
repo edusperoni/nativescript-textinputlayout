@@ -4,7 +4,7 @@ logs
 npm-debug.log*
 
 # Dependency directory
-node_modules
+src/node_modules
 
 # Optional npm cache directory
 .npm
@@ -22,9 +22,6 @@ demo/*.js.map
 demo/platforms
 demo/node_modules
 demo/hooks
-
-# Platforms (NS Managed)
-platforms
 
 # IDEs
 .vscode/

@@ -1,0 +1,68 @@
+{
+  "name": "nativescript-textinputlayout",
+  "version": "2.0.7",
+  "description": "A NativeScript plugin to provide an XML widget to implement the Material Design TextInputLayout.",
+  "main": "textInputLayout",
+  "typings": "textInputLayout.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "4.0.0",
+      "ios": "4.0.1"
+    }
+  },
+  "scripts": {
+    "build": "tsc -skipLibCheck && npm run ngc",
+    "ngc": "ngc --project tsconfig.aot.json",
+    "demo.android": "npm run preparedemo; cd ../demo; tns run android",
+    "debug.android": "npm run preparedemo; cd ../demo; tns debug android --emulator --debug-brk",
+    "demo.ios": "npm run preparedemo; cd ../demo; tns run ios",
+    "debug.ios": "npm run preparedemo; cd ../demo; tns debug ios --emulator --debug-brk",
+    "preparedemo": "npm run build; cd ../demo; tns plugin remove nativescript-textinputlayout; tns plugin add ../src; tns install",
+    "setup": "cd ../demo; npm install; cd ../src; npm run build; cd ../demo; tns plugin add ../src; cd ../src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradleygore/nativescript-textinputlayout"
+  },
+  "keywords": [
+    "NativeScript",
+    "native",
+    "script",
+    "float",
+    "floating label",
+    "android",
+    "TextInputLayout",
+    "Material Design",
+    "bradleygore"
+  ],
+  "contributors": [],
+  "author": "Bradley Gore <bradley@bradleygore.com> (https://github.com/bradleygore)",
+  "license": "MIT",
+  "bugs": "https://github.com/bradleygore/nativescript-textinputlayout/issues",
+  "homepage": "https://github.com/bradleygore/nativescript-textinputlayout",
+  "readmeFilename": "README.md",
+  "readme": "../README.md",
+  "devDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/compiler": "^8.0.3",
+    "@angular/compiler-cli": "^8.0.3",
+    "@angular/core": "^8.0.3",
+    "@angular/forms": "^8.0.3",
+    "@angular/http": "^8.0.0-beta.10",
+    "@angular/platform-browser": "^8.0.3",
+    "@angular/platform-browser-dynamic": "^8.0.3",
+    "@angular/router": "^8.0.3",
+    "babel-traverse": "^6.26.0",
+    "babel-types": "6.22.0",
+    "babylon": "6.15.0",
+    "lazy": "1.0.11",
+    "nativescript-angular": "^8.0.2",
+    "nativescript-dev-typescript": "^0.8.0",
+    "rxjs": "^6.5.2",
+    "tns-core-modules": "^5.2.1",
+    "tns-platform-declarations": "^5.2.1",
+    "typescript": "^3.4.5",
+    "zone.js": "^0.9.1"
+  },
+  "dependencies": {}
+}
